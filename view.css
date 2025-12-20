@@ -1,0 +1,37 @@
+    body,
+    html {
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+        background: #000;
+        font-family: Arial, sans-serif;
+    }
+
+    #titleBar {
+        height: 45px;
+        background: #111;
+        color: #fff;
+        font-size: 18px;
+        padding-left: 15px;
+        display: flex;
+        align-items: center;
+        letter-spacing: .5px;
+        border-bottom: 2px solid #222;
+    }
+
+    #panorama {
+        width: 100%;
+        height: calc(100vh - 45px);
+    }
+
+    .arrowHotspot img {
+        width: 55px;
+        cursor: pointer;
+        filter: drop-shadow(0 0 6px rgba(160, 120, 60, 0.8));
+        transition: .2s;
+    }
+
+    .arrowHotspot img:hover {
+        transform: scale(1.12);
+        filter: drop-shadow(0 0 12px rgba(220, 170, 90, 1));
+    }
