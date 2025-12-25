@@ -129,7 +129,7 @@ const viewer = pannellum.viewer('panorama', {
                     pitch: 0,
                     yaw: -90,
                     type: "scene",
-                    sceneId: "",
+                    sceneId: "ruang5",
                     text: ""
                 },
                 {
@@ -148,6 +148,80 @@ const viewer = pannellum.viewer('panorama', {
                 },
             ]
         },
-
+        ruang5: {
+            title: "Arsivio.st",
+            type: "equirectangular",
+            panorama: "fotostreetview/utama5.png",
+            hfov: 200,
+            minHfov: 50,
+            maxHfov: 110,
+            pitch: 0,
+            yaw: 0,
+            compass: true,
+            hotSpots: [
+                {
+                    pitch: 0,
+                    yaw: -80,
+                    type: "scene",
+                    sceneId: "ruang4",
+                    text: "",
+                },
+                {
+                    pitch: 0,
+                    yaw: 100,
+                    type: "scene",
+                    sceneId: "ruang6",
+                    text: ""
+                },
+            ]
+        },
+        ruang6: {
+            title: "Arsivio.st",
+            type: "equirectangular",
+            panorama: "fotostreetview/utama6.png",
+            hfov: 200,
+            minHfov: 50,
+            maxHfov: 110,
+            pitch: 0,
+            yaw: 0,
+            compass: true,
+            hotSpots: [
+                {
+                    pitch: 0,
+                    yaw: 130,
+                    type: "scene",
+                    sceneId: "ruang5",
+                    text: ""
+                    
+                },
+                {
+                    pitch: 0,
+                    yaw: -145,
+                    type: "scene",
+                    sceneId: "ruang7",
+                    text: ""
+                }
+            ]
+        },
+        ruang7: {
+            title: "Arsivio.st",
+            type: "equirectangular",
+            panorama: "fotostreetview/utama7.png",
+            hfov: 200,
+            minHfov: 50,
+            maxHfov: 110,
+            pitch: 0,
+            yaw: 0,
+            compass: true,
+            hotSpots: [
+                {
+                    pitch: 0,
+                    yaw: 130,
+                    type: "scene",
+                    sceneId: "",
+                    text: ""
+                }
+            ]
+        }
     }
 });
