@@ -62,6 +62,36 @@ ul.L-NavMenu {
   opacity: 0.7;
 }
 
+.hamburger {
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #111;
+        flex-direction: column;
+        display: none;
+    }
+
+    .nav-menu li {
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
 
 .L-Hero {
   position: relative;
