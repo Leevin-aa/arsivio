@@ -5,6 +5,7 @@
   font-family: "Segoe UI", sans-serif;
 }
 
+
 nav {
   position: fixed;
   top: 0;
@@ -15,8 +16,8 @@ nav {
 .L-Nav {
   background-color: #3a2f2f;
   padding: 10px 0;
+  position: relative;
 }
-
 
 .L-NavContainer {
   max-width: 1200px;
@@ -63,9 +64,10 @@ ul.L-NavMenu {
 }
 
 .hamburger {
-    display: none;
-    font-size: 26px;
-    cursor: pointer;
+  display: none;
+  font-size: 26px;
+  color: #fff;
+  cursor: pointer;
 }
 
 .L-Hero {
@@ -188,27 +190,26 @@ ul.L-NavMenu {
   margin-top: 5rem;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
 
-  /* HAMBURGER MUNCUL */
+  /* hamburger muncul */
   .hamburger {
     display: block;
   }
 
-  /* MENU MOBILE */
+  /* sembunyikan menu desktop */
   .L-NavMenu {
     position: absolute;
-    top: 60px;
+    top: 100%;            /* PAS di bawah navbar */
     left: 0;
     width: 100%;
     background-color: #3a2f2f;
     flex-direction: column;
     display: none;
-    padding: 15px 0;
   }
 
   .L-NavMenu li {
-    padding: 12px 0;
+    padding: 14px 0;
     text-align: center;
   }
 
