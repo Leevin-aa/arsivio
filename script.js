@@ -5,8 +5,7 @@ const viewer = pannellum.viewer('panorama', {
         firstScene: "ruang1",
         author: "Radhi",
         autoLoad: true,
-        autoRotate: -2,   // Smooth rotation
-        friction: 0.15,   // Gerakan halus seperti Street View
+        autoRotate: -2,   
         mouseZoom: true
     },
 
