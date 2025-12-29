@@ -490,11 +490,93 @@ ul.L-NavMenu {
   }
 
   /*FOOTER */
-  .L-Footer {
-    position: static; 
-    margin-top: 40px;
-  }
+  /* =========================
+   FOOTER
+========================= */
+.L-Footer {
+  background-color: #3a2f2f;
+  color: #ffffff;
+  padding-top: 60px;
+}
 
+/* CONTAINER GRID */
+.L-FooterContainer {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px 40px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+/* BRAND */
+.L-FooterBrand h3 {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+.L-FooterBrand span {
+  font-size: 13px;
+  opacity: 0.85;
+}
+
+.L-FooterLogoWrap {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.L-FooterLogo {
+  width: 55px;
+}
+
+.L-FooterAddress {
+  font-size: 14px;
+  line-height: 1.6;
+  opacity: 0.85;
+}
+
+/* LINKS */
+.L-FooterLinks h4 {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.L-FooterLinks ul {
+  list-style: none;
+  padding: 0;
+}
+
+.L-FooterLinks li {
+  margin-bottom: 10px;
+}
+
+.L-FooterLinks a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+  opacity: 0.85;
+  transition: opacity 0.3s;
+}
+
+.L-FooterLinks a:hover {
+  opacity: 1;
+}
+
+/* BOTTOM */
+.L-FooterBottom {
+  border-top: 1px solid rgba(255,255,255,0.3);
+  text-align: center;
+  padding: 15px 20px;
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+/* =========================
+   TABLET (2 KOLOM)
+========================= */
+@media (max-width: 900px) {
   .L-FooterContainer {
     grid-template-columns: 1fr 1fr;
     text-align: center;
@@ -505,33 +587,31 @@ ul.L-NavMenu {
   }
 }
 
-@media (max-width: 480px) {
-
-  .L-Hero {
-    height: 60vh;
-  }
-
-  .L-HeroTitle {
-    font-size: 26px;
-  }
-
-  .L-HeroSubtitle {
-    font-size: 14px;
-  }
-
-  .teks1 {
-    font-size: 2rem;
-  }
-
-  .L-CardContainer {
+/* =========================
+   MOBILE (1 KOLOM)
+========================= */
+@media (max-width: 600px) {
+  .L-FooterContainer {
     grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
   }
 
-  .L-CardText {
+  .L-FooterLogoWrap {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .L-FooterAddress {
     font-size: 13px;
   }
 
-  .L-FooterContainer {
-    grid-template-columns: 1fr;
+  .L-FooterLinks h4 {
+    margin-bottom: 10px;
   }
+
+  .L-FooterLinks li {
+    margin-bottom: 8px;
+  }
+}
 }
