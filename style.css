@@ -7,23 +7,24 @@
 
 nav {
   position: fixed;
+  top: 0;
   width: 100%;
   z-index: 1000;
 }
 
 .L-Nav {
   background-color: #3a2f2f;
-  padding: 5px 0;
-
+  padding: 10px 0;
 }
+
 
 .L-NavContainer {
   max-width: 1200px;
   margin: auto;
-  padding: 0 10px;
+  padding: 0 15px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 
 ul.L-NavMenu {
@@ -35,7 +36,7 @@ ul.L-NavMenu {
   align-items: center;
   gap: 10px;
   color: #fff;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .L-NavLogo {
@@ -46,9 +47,8 @@ ul.L-NavMenu {
 .L-NavMenu {
   display: flex;
   list-style: none;
-  gap: 25px;
+  gap: 30px;
   align-items: center;
-
 }
 
 .L-NavMenu a {
@@ -66,31 +66,6 @@ ul.L-NavMenu {
     display: none;
     font-size: 26px;
     cursor: pointer;
-}
-
-@media screen and (max-width: 768px) {
-    .nav-menu {
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background: #111;
-        flex-direction: column;
-        display: none;
-    }
-
-    .nav-menu li {
-        text-align: center;
-        padding: 15px 0;
-    }
-
-    .nav-menu.active {
-        display: flex;
-    }
-
-    .hamburger {
-        display: block;
-    }
 }
 
 .L-Hero {
@@ -160,28 +135,6 @@ ul.L-NavMenu {
   opacity: 0.8;
 }
 
-
-@media (max-width: 768px) {
-  .L-Hero {
-    height: 70vh;
-  }
-
-  .L-HeroTitle {
-    font-size: 36px;
-  }
-
-  .L-HeroSubtitle {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 480px) {
-  .L-HeroTitle {
-    font-size: 28px;
-  }
-}
-
-
 .L-Section {
   background-color: #4b362d;
   padding: 60px 20px;
@@ -225,23 +178,6 @@ ul.L-NavMenu {
   object-fit: cover;
 }
 
-@media (max-width: 768px) {
-  .L-SectionContainer {
-    grid-template-columns: 1fr;
-  }
-
-  .L-SectionTitle {
-    font-size: 22px;
-    
-  }
-
-  .L-SectionText p {
-    font-size: 14px;
-  }
-}
-
-
-
 .teks1 {
   text-align: center;
   width: 100%;
@@ -252,23 +188,41 @@ ul.L-NavMenu {
   margin-top: 5rem;
 }
 
+@media screen and (max-width: 768px) {
 
-@media (max-width: 768px) {
-  .teks1 {
-    position: static;
-    margin-top: 60px;
-    font-size: 2.2rem;
+  /* HAMBURGER MUNCUL */
+  .hamburger {
+    display: block;
+  }
+
+  /* MENU MOBILE */
+  .L-NavMenu {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #3a2f2f;
+    flex-direction: column;
+    display: none;
+    padding: 15px 0;
+  }
+
+  .L-NavMenu li {
+    padding: 12px 0;
+    text-align: center;
+  }
+
+  .L-NavMenu.active {
+    display: flex;
   }
 }
 
-/* Mobile */
+
 @media (max-width: 480px) {
-  .teks1 {
-    margin-top: 40px;
-    font-size: 1.8rem;
+  .L-NavMenu li a {
+    font-size: 14px;
   }
 }
-
 
 /*  CARD SECTION  */
 .L-CardSection {
