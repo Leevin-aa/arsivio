@@ -619,82 +619,113 @@ ul.L-NavMenu {
 
 /* Landing Page */
 
-.M-CarouselOverlay {
+.M-HeroSection {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.M-CarouselSection {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.M-Slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.M-SlideActive {
+  opacity: 1;
+}
+
+.M-Overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.30);
-  z-index: 2;
-  height: 634px;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1;
 }
 
-.M-CarouselContent {
-  position:relative;
-  z-index: 3;
+.M-HeroContent {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
   text-align: center;
-  color: white;
-  top: -400px;
+  padding: 20px;
+  z-index: 2;
 }
 
-.M-CarouselTitle{
-  font-size: 40px;
-  letter-spacing: 2px;
-  margin-bottom: 10px;
+.M-HeroContent h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
 }
 
-.M-CarouselSubtitle {
-  font-size: 18px;
+.M-HeroContent p {
+  font-size: 1.1rem;
+  max-width: 600px;
   margin-bottom: 25px;
-  opacity: 1.9;
 }
 
-.M-CarouselButton {
-  background-color: #ffffff;
-  color: #000000;
-  border: none;
+.M-Hbtn {
+  background: #ffffff;
+  color: #333;
   padding: 12px 28px;
-  border-radius: 25px;
-  font-size: 15px;
-  font-weight: 645;
-  cursor: pointer;
-  transition: 0.3s;
+  border-radius: 30px;
   text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
-.M-CarouselButton:hover {
-  background-color: #e5e5e5;
+.M-Hbtn:hover {
+  background: #ddd;
 }
 
-.M-CarouselAuthor {
+.M-HeroArtist {
   display: block;
-  margin-top: 20px;
+  margin-top: 15px;
   font-size: 14px;
-  font-weight: 645;
+  opacity: 0.8;
 }
-
 
 @media (max-width: 768px) {
-  .L-Hero {
-    height: 70vh;
+  .M-HeroSection {
+    height: 80vh;
   }
 
-  .M-CarouselTitle {
-    font-size: 36px;
+  .M-HeroContent h1 {
+    font-size: 2rem;
   }
 
-  .M-CarouselSubtitle {
-    font-size: 16px;
+  .M-HeroContent p {
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 480px) {
-  .M-CarouselTitle {
-    font-size: 28px;
+  .M-HeroContent h1 {
+    font-size: 1.6rem;
+  }
+
+  .M-Hbtn {
+    padding: 10px 22px;
+    font-size: 0.9rem;
   }
 }
 
 .M-DisplaySection {
-  position: relative;
-  top: -100px;
+  /* position: relative; */
+  margin-top: 100px;
+  padding: 0, 5%;
 }
 
 .M-DisplayContainer {
@@ -734,9 +765,28 @@ ul.L-NavMenu {
   text-align: center;
 }
 
+.M-DisplayGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+@media (max-width: 768px) {
+  .M-DisplayGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .M-DisplaySection {
+    margin-top: 50px;
+  }
+}
+
 .M-AboutSection {
   display: flex;
   min-height: 500px;
+  margin-top: 100px
 }
 
 /* Left */
@@ -780,6 +830,7 @@ ul.L-NavMenu {
 @media (max-width: 900px) {
   .M-AboutSection {
     flex-direction: column;
+    margin-top: 50px;
   }
 
   .M-AboutImg img {
