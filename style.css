@@ -999,6 +999,7 @@ ul.L-NavMenu {
   .M-DisImg {
     width: 100%;
     max-width: 100%;
+    border-radius: 5px;
   }
 
   .M-DisTitle {
