@@ -831,11 +831,11 @@ ul.L-NavMenu {
 
 @media (max-width: 480px) {
   .M-AboutText {
-    padding: 20px;
+    padding: 30px;
   }
 
   .M-AboutText {
-    font-size: 24px;
+    font-size: 15px;
   }
 }
 
