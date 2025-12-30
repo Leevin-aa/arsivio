@@ -780,7 +780,7 @@ ul.L-NavMenu {
   }
 } */
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .M-DisplaySection {
     margin-top: 50px;
     column-count: 1;
@@ -878,7 +878,7 @@ ul.L-NavMenu {
   }
 
   .M-AboutText {
-    font-size: 26px;
+    font-size: 24px;
   }
 }
 
