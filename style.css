@@ -774,51 +774,6 @@ ul.L-NavMenu {
   gap: 30px;
 }
 
-@media (max-width: 480px) {
-
-  .M-DisplaySection {
-    margin-top: 80px;
-    padding: 0 16px;
-  }
-
-  .M-DisplayContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    padding: 0;
-  }
-
-  .M-Dis {
-    width: 100%;
-    margin-bottom: 0;
-  }
-
-  .M-DisImage {
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .M-DisTitle {
-    font-size: 18px;
-    line-height: 1.3;
-    margin: 16px 0 8px;
-  }
-
-  .M-DisText p,
-  .M-DisCaption {
-    font-size: 14px;
-    line-height: 1.6;
-    margin: 6px 0;
-  }
-
-  .M-DisLine,
-  .M-DisSubLine {
-    width: 100%;
-    max-width: 100%;
-    margin: 10px 0;
-  }
-}
-
 .M-AboutSection {
   display: flex;
   min-height: 500px;
@@ -876,11 +831,11 @@ ul.L-NavMenu {
 
 @media (max-width: 480px) {
   .M-AboutText {
-    padding: 15px;
+    padding: 20px;
   }
 
   .M-AboutText {
-    font-size: 15px;
+    font-size: 24px;
   }
 }
 
@@ -1019,5 +974,50 @@ ul.L-NavMenu {
   .M-BtnStreet {
     padding: 12px 28px;
     font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .M-DisplaySection {
+    margin-top: 80px;
+    padding: 0 16px;
+  }
+
+  .M-DisplayContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 0;
+  }
+
+  .M-Dis {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .DisImage,
+  .M-DisImg {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .M-DisTitle {
+    font-size: 18px;
+    line-height: 1.3;
+    margin: 16px 0 8px;
+  }
+
+  .M-DisText p,
+  .M-DisCaption {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 6px 0;
+  }
+
+  .M-DisLine,
+  .M-DisSubLine {
+    width: 100%;
+    max-width: 100%;
+    margin: 10px 0;
   }
 }
