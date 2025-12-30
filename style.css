@@ -901,7 +901,7 @@ ul.L-NavMenu {
 
 @media (max-width: 480px) {
   .M-Masonry {
-    column-count: 1;
+    column-count: 2;
   }
 }
 
