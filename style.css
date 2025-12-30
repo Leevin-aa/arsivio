@@ -733,11 +733,14 @@ ul.L-NavMenu {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-/* .M-Dis {
-  text-align: center;
-} */
+.M-Dis {
+  margin-bottom: 40px;
+}
 
 .M-DisTitle {
   text-align: center;
@@ -771,15 +774,46 @@ ul.L-NavMenu {
   gap: 30px;
 }
 
-@media (max-width: 768px) {
-  .M-DisplayGrid {
-    grid-template-columns: 1fr;
+/* @media (min-width: 1024px) {
+  .M-DisplayContainer {
+    padding: 0 5%;
   }
-}
+} */
 
 @media (max-width: 768px) {
   .M-DisplaySection {
     margin-top: 50px;
+    column-count: 1;
+  }
+
+  .M-DisplayContainer {
+    padding: 0 18px;
+  }
+
+  .M-DisplayGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .M-DisImg {
+    width: 100%;
+    max-width: 95%;
+    margin: 0 auto 14px;
+    display: block;
+  }
+
+   .M-DisTitle h3 {
+    font-size: 18px;
+    margin: 16px 0 10px;
+  }
+
+  .M-DisText p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 8px;
+  }
+
+  .M-Dis {
+    margin-bottom: 32px;
   }
 }
 
