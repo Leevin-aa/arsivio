@@ -1,27 +1,30 @@
     body,
     html {
         height: 100%;
-        margin: 0;
+        margin: 10;
         overflow: hidden;
-        background: #000;
+        background: #3a2f2f;
         font-family: Arial, sans-serif;
+    }
+
+.button {
+        padding: 15px;
+        margin-top: 999px;
     }
 
     #titleBar {
         height: 45px;
-        background: #111;
+        background: #3a2f2f;
         color: #fff;
         font-size: 18px;
-        padding-left: 15px;
         display: flex;
+        padding-left: 10px;
         align-items: center;
-        letter-spacing: .5px;
-        border-bottom: 2px solid #222;
     }
 
     #panorama {
         width: 100%;
-        height: calc(100vh - 45px);
+        height: calc(95vh - 45px);
     }
 
     .arrowHotspot img {
@@ -34,4 +37,76 @@
     .arrowHotspot img:hover {
         transform: scale(1.12);
         filter: drop-shadow(0 0 12px rgba(220, 170, 90, 1));
+    }
+
+    @media (max-width: 768px) {
+
+        #titleBar {
+            height: 40px;
+            font-size: 14px;
+            align-items: center;
+        }
+
+        #panorama {
+            height: calc(90vh - 60px);
+        }
+
+        .arrowHotspot img {
+            width: 40px;
+        }
+
+        .button {
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            margin-top: 25px;
+            z-index: 9999;
+        }
+
+
+        .button a {
+            text-decoration: none;
+            color: #fff;
+            background: #3a2f2f;
+            padding: 8px 16px;
+            border-radius: 4px;
+            border: 2px solid #fff;
+            font-size: 14px;
+        }
+
+        a:hover {
+            background: #fff;
+            color: #3a2f2f;
+            transition: .3s;
+        }
+    }
+
+    /* ===============================
+   RESPONSIVE MOBILE KECIL
+   =============================== */
+    @media (max-width: 480px) {
+
+        #titleBar {
+            font-size: 13px;
+            padding-left: 10px;
+            letter-spacing: .3px;
+        }
+
+        .arrowHotspot img {
+            width: 34px;
+        }
+    }
+
+    /* ===============================
+   DESKTOP BESAR / TV
+   =============================== */
+    @media (min-width: 1200px) {
+
+        #titleBar {
+            font-size: 20px;
+        }
+
+        .arrowHotspot img {
+            width: 65px;
+        }
     }
