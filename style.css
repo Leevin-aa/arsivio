@@ -774,48 +774,50 @@ ul.L-NavMenu {
   gap: 30px;
 }
 
-/* @media (min-width: 1024px) {
-  .M-DisplayContainer {
-    padding: 0 5%;
-  }
-} */
+@media (max-width: 480px) {
 
-/* @media (max-width: 480px) {
   .M-DisplaySection {
-    margin-top: 50px;
-    column-count: 1;
+    margin-top: 80px;
+    padding: 0 16px;
   }
 
   .M-DisplayContainer {
-    padding: 0 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 0;
   }
 
-  .M-DisplayGrid {
-    grid-template-columns: 1fr;
+  .M-Dis {
+    width: 100%;
+    margin-bottom: 0;
   }
 
   .M-DisImage {
     width: 100%;
-    max-width: 95%;
-    margin: 0 auto 14px;
-    display: block;
+    max-width: 100%;
   }
 
-   .M-DisTitle h3 {
+  .M-DisTitle {
     font-size: 18px;
-    margin: 16px 0 10px;
+    line-height: 1.3;
+    margin: 16px 0 8px;
   }
 
-  .M-DisText p {
+  .M-DisText p,
+  .M-DisCaption {
     font-size: 14px;
     line-height: 1.6;
-    margin-bottom: 8px;
+    margin: 6px 0;
   }
 
-  .M-Dis {
-    margin-bottom: 32px;
+  .M-DisLine,
+  .M-DisSubLine {
+    width: 100%;
+    max-width: 100%;
+    margin: 10px 0;
   }
-} */
+}
 
 .M-AboutSection {
   display: flex;
@@ -1017,59 +1019,5 @@ ul.L-NavMenu {
   .M-BtnStreet {
     padding: 12px 28px;
     font-size: 14px;
-  }
-}
-
-@media (max-width: 480px) {
-
-  /* SECTION JARAK DARI CAROUSEL */
-  .M-DisplaySection {
-    margin-top: 80px;
-    padding: 0 16px;
-  }
-
-  /* CONTAINER JADI COLUMN */
-  .M-DisplayContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    padding: 0;
-  }
-
-  /* CARD */
-  .M-Dis {
-    width: 100%;
-    margin-bottom: 0;
-  }
-
-  /* IMAGE */
-  .DisImage,
-  .M-DisImg {
-    width: 100%;
-    max-width: 100%;
-    border-radius: 12px;
-  }
-
-  /* TITLE */
-  .M-DisTitle {
-    font-size: 18px;
-    line-height: 1.3;
-    margin: 16px 0 8px;
-  }
-
-  /* TEXT */
-  .M-DisText p,
-  .M-DisCaption {
-    font-size: 14px;
-    line-height: 1.6;
-    margin: 6px 0;
-  }
-
-  /* LINE (JANGAN FIX WIDTH) */
-  .M-DisLine,
-  .M-DisSubLine {
-    width: 100%;
-    max-width: 100%;
-    margin: 10px 0;
   }
 }
