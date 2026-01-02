@@ -48,7 +48,7 @@
         }
 
         #panorama {
-            height: calc(90vh - 60px);
+            height: calc(80vh - 60px);
         }
 
         .arrowHotspot img {
