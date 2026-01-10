@@ -954,10 +954,10 @@ ul.L-NavMenu {
 
 .M-BtnStreet {
   display: inline-block;
-  padding: 30px 60px;
+  padding: 20px 40px;
   background: #3B3030;
   color: #fff;
-  font-size:30px;
+  font-size: 20px;
   font-weight: 500;
   border-radius: 999px;
   text-decoration: none;
