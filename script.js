@@ -3,7 +3,7 @@
 const viewer = pannellum.viewer('panorama', {
     default: {
         firstScene: "ruang1",
-        author: "Radhi",
+        author: "Arsivio Team",
         autoLoad: true,
         autoRotate: -2,   
         mouseZoom: true
