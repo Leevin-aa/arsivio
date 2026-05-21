@@ -77,7 +77,7 @@ const viewer = pannellum.viewer('panorama', {
                     pitch: -2,
                     yaw: 10,
                     type: "scene",
-                    sceneId: "ruang8",
+                    sceneId: "ruangtambah1",
                     text: "Kolonial"
                 },
                 {
@@ -255,6 +255,41 @@ const viewer = pannellum.viewer('panorama', {
                 }
             ]
         },
+          ruangtambah1: {
+            title: "Arsivio.st",
+            type: "equirectangular",
+            panorama: "newstreetview/2.png",
+            hfov: 200,
+            minHfov: 50,
+            maxHfov: 110,
+            pitch: 0,
+            yaw: 0,
+            hotSpots: [
+                {
+                    pitch: 0,
+                    yaw: 120,
+                    type: "scene",
+                    sceneId: "ruang3",
+                    text: "Klasik"
+                },
+                {
+                    pitch: 0,
+                    yaw: 65,
+                    type: "scene",
+                    sceneId: "ruang9",
+                    text: "Klasik"
+                },
+                {
+                    pitch: 0,
+                    yaw: 10,
+                    type: "scene",
+                    sceneId: "ruang8",
+                    text: "Klasik"
+                }
+            ]
+        },
+
+
         ruang9: {
             title: "Arsivio.st",
             type: "equirectangular",
